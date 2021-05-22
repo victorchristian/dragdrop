@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .droptarget{
+        float : left;
+        width : 100px;
+        height : 35px;
+        margin : 15px;
+        padding : 10px;
+        border : 1px solid #aaaaaa;
+      }
+    </style>
+  </head>
+  <body style="background-color:yellow">
+    <p>Drag Element Diantara Dua Kotak</p>
+    <div style="background-color:blue" class="droptarget" ondrop="drop(event)" ondragover="allowdrop(event)">
+      <p ondragstart="dragstart(event)" ondrag="dragging(event)" draggable="true" id ="dragtarget">drag saya</p>
+    </div>
+    <div style="background-color:red" class="droptarget" ondrop="drop(event)" ondragover="allowdrop(event)">
+    </div>
+      <p id= "objecttext"></p>
+
+    <script type="text/javascript" src="jDragdrop.js"></script>
+    </body>
+</html>
